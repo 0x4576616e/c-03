@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evmorvan <evmorvan@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/06 16:29:50 by evmorvan          #+#    #+#             */
-/*   Updated: 2023/02/07 16:53:58 by evmorvan         ###   ########.fr       */
+/*   Created: 2023/02/07 16:56:30 by evmorvan          #+#    #+#             */
+/*   Updated: 2023/02/07 16:59:36 by evmorvan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	int	i;
+	unsigned int	dest_len;
+	unsigned int	src_len;
+	unsigned int	i;
 
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-char	*ft_strstr(char *str, char *to_find)
-{
-	int	str_len;
-	int to_find_len;
-	int	i;
-	int	j;
-
-	str_len = ft_strlen(str);
-	to_find_len = ft_strlen(to_find);
+	dest_len = ft_strlen(dest);
+	src_len = ft_strlen(src);
 	i = 0;
-	while (i <= str_len - to_find_len)
+	if (size <= dest_len)
+		return (src_len + size);
+	while (i < size - 1 && src[i])
 	{
-		j = 0;
-		while (j < to_find_len && str[i + j] == to_find[j])
-			j++;
-		if (j == to_find_len)
-			return (str + i);
+		dest[dest_len + i] = src[i];
 		i++;
 	}
-	return (NULL);
+	dest[dest_len + i] = '\0';
+	return (dest_len + src_len);
 }
