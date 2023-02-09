@@ -6,9 +6,19 @@
 /*   By: evmorvan <evmorvan@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/07 16:56:30 by evmorvan          #+#    #+#             */
-/*   Updated: 2023/02/07 16:59:36 by evmorvan         ###   ########.fr       */
+/*   Updated: 2023/02/09 14:54:46 by evmorvan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {

@@ -6,7 +6,7 @@
 /*   By: evmorvan <evmorvan@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 16:29:50 by evmorvan          #+#    #+#             */
-/*   Updated: 2023/02/09 13:28:03 by evmorvan         ###   ########.fr       */
+/*   Updated: 2023/02/09 14:41:15 by evmorvan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@ int	ft_strlen(char *str)
 {
 	int	i;
 
+	i = 0;
 	while (str[i] != '\0')
 		i++;
 	return (i);
@@ -38,5 +39,5 @@ char	*ft_strstr(char *str, char *to_find)
 			return (str + i);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
