@@ -6,7 +6,7 @@
 /*   By: evmorvan <evmorvan@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 16:29:50 by evmorvan          #+#    #+#             */
-/*   Updated: 2023/02/07 16:53:58 by evmorvan         ###   ########.fr       */
+/*   Updated: 2023/02/09 13:28:03 by evmorvan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_strlen(char *str)
 char	*ft_strstr(char *str, char *to_find)
 {
 	int	str_len;
-	int to_find_len;
+	int	to_find_len;
 	int	i;
 	int	j;
 

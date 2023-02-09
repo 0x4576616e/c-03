@@ -6,7 +6,7 @@
 /*   By: evmorvan <evmorvan@student.42nice.f>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/07 11:51:07 by evmorvan          #+#    #+#             */
-/*   Updated: 2023/02/07 11:57:36 by evmorvan         ###   ########.fr       */
+/*   Updated: 2023/02/09 13:28:55 by evmorvan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_strcmp(char *s1, char *s2);
 
-int	main(void)
+/*int	main(void)
 {
 	char s[] = "abcd";
 	char s2[] = "abCd";
@@ -28,5 +28,4 @@ int	main(void)
 	printf("%d, %d\n", strcmp(s, s3), ft_strcmp(s, s3));
 	printf("%d, %d\n", strcmp(s, s4), ft_strcmp(s, s4));
 	printf("%d, %d\n", strcmp(s4, s), ft_strcmp(s4, s));
-}
-	
+}*/	

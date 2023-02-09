@@ -6,7 +6,7 @@
 /*   By: evmorvan <evmorvan@student.42nice.f>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/07 11:04:12 by evmorvan          #+#    #+#             */
-/*   Updated: 2023/02/07 11:50:40 by evmorvan         ###   ########.fr       */
+/*   Updated: 2023/02/09 13:29:54 by evmorvan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb);
 
-int	main(void)
+/*int	main(void)
 {
 	char s_dest[100] = "the cake ";
 	char s_src[] = "is a lie";
@@ -25,4 +25,4 @@ int	main(void)
 	ft_strncat(s_dest, s2_src, 3);
 	strncat(s2_dest, s2_src, 3);
 	printf("%s\n%s\n", s_dest, s2_dest);
-}
+}*/
