@@ -6,7 +6,7 @@
 /*   By: evmorvan <evmorvan@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/07 16:56:30 by evmorvan          #+#    #+#             */
-/*   Updated: 2023/02/09 14:54:46 by evmorvan         ###   ########.fr       */
+/*   Updated: 2023/02/10 18:10:35 by evmorvan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	i = 0;
 	if (size <= dest_len)
 		return (src_len + size);
-	while (i < size - 1 && src[i])
+	while (i < size - dest_len - 1 && src[i])
 	{
 		dest[dest_len + i] = src[i];
 		i++;
